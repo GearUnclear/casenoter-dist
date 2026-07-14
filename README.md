@@ -9,20 +9,29 @@ Download the latest release from the [Releases](https://github.com/GearUnclear/c
 
 ## Pin CaseNoter to your taskbar
 
-`casenoter-helper.exe` is what starts CaseNoter. Leave it in its folder next to the `.html` file; if you move the exe by itself, CaseNoter won't start. Make a shortcut instead and pin that.
+`casenoter-helper.exe` is what starts CaseNoter. Leave it in its folder next to the `.html` file; if you move the exe by itself, CaseNoter won't start. Instead, make a shortcut, give it a name and icon you'll recognize, and pin that.
 
-### Step 1: Make a desktop shortcut
+### Step 1: Make a shortcut
 
 1. Open the folder where you unzipped CaseNoter.
 2. Right-click `casenoter-helper.exe`. On Windows 11, click **Show more options** to see the full menu.
-3. Click **Send to** → **Desktop (create shortcut)**.
-4. A shortcut appears on your desktop. Optional: right-click it, choose **Rename**, and call it **CaseNoter**.
+3. Click **Send to** → **Desktop (create shortcut)**. A shortcut appears on your desktop.
 
-### Step 2: Pin the shortcut to the taskbar
+### Step 2: Give it a name and icon you'll remember
 
-1. Right-click the new desktop shortcut. On Windows 11, click **Show more options** again.
+The plain shortcut has a generic name and icon, which is easy to lose on a crowded taskbar. Fix both now:
+
+1. Right-click the new desktop shortcut and choose **Rename**. Call it **CaseNoter**.
+2. Right-click it again and choose **Properties**.
+3. On the **Shortcut** tab, click **Change Icon...**
+4. If Windows says the file contains no icons, that's normal — click **OK** and it will show you Windows' built-in icons instead.
+5. Pick an icon you'll remember (a house or a pencil works well), then click **OK** twice.
+
+### Step 3: Pin the shortcut to the taskbar
+
+1. Right-click the shortcut. On Windows 11, click **Show more options** again.
 2. Click **Pin to taskbar**.
 
-That's it. Click the taskbar icon any time to start CaseNoter. Once it's pinned, you can delete the desktop shortcut if you want; the pin keeps working on its own.
+That's it. Click your chosen icon on the taskbar any time to start CaseNoter. Once it's pinned, you can delete the desktop shortcut if you want; the pin keeps working on its own.
 
-**If the icon stops working later:** you probably moved or re-downloaded the CaseNoter folder. Unpin the old icon (right-click it → **Unpin from taskbar**) and repeat the two steps above from the new folder.
+**If the icon stops working later:** you probably moved or re-downloaded the CaseNoter folder. Unpin the old icon (right-click it → **Unpin from taskbar**) and repeat the steps above from the new folder.
