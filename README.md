@@ -1,56 +1,52 @@
 # CaseNoter for Windows
 
-CaseNoter is a desktop app for Housing Hope staff using Apricot. One installer includes **Housing** and **Education & Employment (EE&T)**.
+CaseNoter 3.0 is a Windows desktop app for Housing Hope staff using Apricot. One installer includes **Housing** and **Education & Employment (EE&T)**.
 
 **[Download CaseNoter-Setup.exe](https://github.com/GearUnclear/casenoter-dist/releases/latest/download/CaseNoter-Setup.exe)** · [All releases](https://github.com/GearUnclear/casenoter-dist/releases)
 
-## Install
+## Install or upgrade to 3.0
 
-1. Download **CaseNoter-Setup.exe** and run it using your ordinary Windows account. No administrator password is required.
-2. Keep the default folder, `C:\Casenoter`, or choose a folder you can write to if your computer blocks that location.
-3. Choose **Housing** or **Education & Employment (EE&T)**. Both departments are installed; this selects which one opens.
+**A one-time manual upgrade from CaseNoter 2.x to 3.0 is required.** Download and run the installer below; the browser version's updater cannot perform this upgrade. After installing 3.0, future desktop updates run automatically.
+
+1. Download **CaseNoter-Setup.exe** and run it using your normal Windows account.
+2. Keep the default folder, `C:\Casenoter`, or choose a folder you can write to.
+3. Choose **Housing** or **Education & Employment (EE&T)**. Both are installed; this selects which department opens.
 4. Select the desktop shortcut option if you want one, finish Setup, and open **CaseNoter**.
 
-The app requires 64-bit Windows 10 (version 1809 or later) or Windows 11. Setup installs Microsoft WebView2 if needed; that step requires internet access. If it fails, check your connection and run Setup again. No separate .NET runtime, helper download, HTML file, or ZIP extraction is needed.
+Requires 64-bit Windows 10 (version 1809 or later) or Windows 11. No administrator password is required. Setup installs Microsoft WebView2 if needed, which requires internet access. If that step fails, check your connection and run Setup again.
 
-## Connect your account
+## Bring your existing setup from 2.x
 
-Follow the setup steps inside CaseNoter. Choose a passphrase, open Bonterra's credential page, and create credentials under **your own staff account**. Paste the Client ID and Client Secret into CaseNoter. The app verifies your connection before syncing participants.
+Keep your old installation until you have checked that your setup works in the desktop app. Installing 3.0 alone does not copy your browser's saved setup.
 
-New credentials can take time to activate; follow the app's retry instructions. Your passphrase encrypts your credentials on this computer.
+1. Open CaseNoter in the browser and unlock it. In **Settings**, choose **Export my setup** and save the encrypted file.
+2. Open the desktop app and choose **Move my existing setup**.
+3. Select the encrypted export in the import panel and enter your **existing CaseNoter password**.
+4. Choose **Import and open CaseNoter**. Confirm replacement if matching data already exists.
+5. Check your setup before removing the old installation. If you use both departments, check both; each keeps its original password.
 
-## Move your existing browser setup
+If your browser build supports direct transfer, you can instead keep the old helper running and follow the paired transfer prompts under **Move my existing setup**. If it opens normal CaseNoter rather than a transfer page, use the encrypted export steps above.
 
-Keep your original installation and helper running while you transfer. The browser and desktop apps can stay open together.
+Imported pending requests remain available for review and are never automatically resubmitted. Check Apricot before entering uncertain work again.
 
-1. In the desktop app, choose **Move my existing setup** on first launch or in Settings. Choose the correct source if several are found.
-2. In your original browser profile, check the source folder and pairing code, then choose **Allow this one-time transfer**. If the transfer link opens the wrong profile, copy it into the browser profile you used for CaseNoter.
-3. Return to the desktop app and enter your **existing CaseNoter password**. If both departments are present, use the password for the department selected on the transfer page.
-4. Choose **Import and open CaseNoter**. Confirm replacement if matching data already exists. CaseNoter restores and opens automatically.
-5. Check both departments before removing the old installation. Each department keeps its original password.
+## Set up a new account
 
-**Older browser versions, including v2.6.9.5:** if the browser opens normal CaseNoter instead of a transfer page, cancel the connection. In the browser app's Settings, choose **Export my setup**. Select that encrypted file in the desktop import panel and enter your original password. Use this file export/import method when moving to another computer, too. A folder alone cannot recover your browser vault.
+If you do not have an existing setup, follow the steps inside CaseNoter. Choose a passphrase, create Bonterra credentials under **your own staff account**, and paste the Client ID and Client Secret into the app. CaseNoter verifies the connection before syncing participants. New credentials can take time to activate; follow the retry instructions.
 
-Imported pending requests remain available for review and are never automatically resubmitted. Check Apricot before entering uncertain work again. Keep your original installation and backup until the transfer succeeds.
+## Open and use CaseNoter
 
-## Open, pin, and change department
+Open **CaseNoter** from the Start menu or desktop shortcut. To pin it, open the app, right-click its taskbar icon, and choose **Pin to taskbar**. Opening it again focuses the existing window.
 
-Open **CaseNoter** from the Start menu or desktop shortcut. To pin it, open the app, right-click its taskbar icon, and choose **Pin to taskbar**. Opening it again focuses the existing window. External links open in your normal browser.
+To change department, close CaseNoter and run Setup again. Select the other department and finish installation. Both departments' credentials and settings are preserved.
 
-To change department, close CaseNoter, run the installer again, and select the other department. Both departments' credentials and settings are preserved. Unlock the selected department with its own passphrase, or set it up if you have not used it yet.
+Finish saves before closing the window or choosing **Quit**. Pending or unconfirmed work is not a successful save.
 
-Finish saves before closing. Closing the window or choosing **Quit** stops the app and its helper. Pending or unconfirmed work is not a successful save.
+## Updates and reinstall
 
-## Updates, reinstall, and removal
+The desktop app checks for updates when it opens. You can also choose **Force check for updates** in Settings. Updates install the full app and reopen it automatically after your work is protected. Follow any prompts for unsaved work. Updates never submit pending requests.
 
-CaseNoter checks for updates when it opens. You can also use **Force check for updates** in Settings. Verified updates install the full app and reopen it automatically after your work is protected. Finish saves, sync, and setup transfers first; follow the prompt for unsaved entries. Updates never submit pending work. Offline or failed checks leave your current app available.
+Reinstalling preserves your setup, passwords, and selected department. To reinstall, close CaseNoter and run the latest installer into the same folder.
 
-**Existing 3.0.1 RC users:** close CaseNoter and manually run the latest **CaseNoter-Setup.exe** into your existing folder once to enable the desktop updater. Your setup and passwords are preserved. Later supported desktop updates run automatically. Stable installs receive newer stable releases; RC installs can receive newer RC or stable releases. No GitHub account or token is required.
+To remove the app, use **Windows Settings → Apps → Installed apps**. Keep local data when asked unless you intend to delete this computer's credentials, settings, and saved data. Apricot records are unaffected.
 
-Reinstalling preserves your credentials, settings, and selected department. Local data lives under `%LOCALAPPDATA%\CaseNoter`, independently of the installation folder.
-
-If an interrupted update prevents startup, run `%LOCALAPPDATA%\CaseNoter\Updates\Repair CaseNoter.cmd`. If recovery fails, reinstall the latest desktop package into the same folder and keep your local data.
-
-Remove CaseNoter through **Windows Settings → Apps → Installed apps**. Keep local data when asked unless you intend to delete this computer's credentials, settings, and data. Removing local data may drop unsent work; Apricot records are unaffected.
-
-For help, see the [staff guide](https://housinghopehelp.xyz/api_guide/) or use the app's diagnostics control when contacting support. Never send your passphrase, Client Secret, or participant data with a support request.
+For help, see the [staff guide](https://housinghopehelp.xyz/api_guide/) or use the app's diagnostics control when contacting support.
